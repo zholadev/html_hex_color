@@ -1,0 +1,91 @@
+/** vars **/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  font-size: 16px;
+  list-style: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.site {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.site .title {
+  text-transform: uppercase;
+  animation: title_pulse 4s ease infinite;
+}
+
+.site .content {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+  margin-top: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 767.98px) {
+  .site .content {
+    margin-top: 120px;
+  }
+}
+
+.site .content .context__box {
+  margin-top: 30px;
+  color: #2C3E50;
+}
+
+.site .content .context__box .btn-event {
+  width: 100%;
+  height: 100%;
+  min-height: 40px;
+  padding: 5px 20px;
+  color: #ECF0F1;
+  background-color: #2980B9;
+}
+
+.site .content .color-bg {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  margin-top: 60px;
+  position: relative;
+  border: 1px solid #3498DB;
+  border-radius: 20px;
+}
+
+@keyframes title_pulse {
+  0% {
+    color: #0540F2;
+  }
+  20% {
+    color: #056CF2;
+  }
+  40% {
+    color: #0597F2;
+  }
+  60% {
+    color: #05C7F2;
+  }
+  80% {
+    color: #05e2cc;
+  }
+  100% {
+    color: #05F2DB;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
